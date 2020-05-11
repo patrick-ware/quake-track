@@ -1,3 +1,14 @@
 body {
   font-family: 'Raleway';
+  background: #443737;
+}
+
+.title {
+  color: white;
+  margin-left: 200px;
+}
+
+.Graph {
+  background: #272121;
+  margin: 0px 200px 200px 200px;
 }
