@@ -8,11 +8,20 @@ body {
   margin-left: 200px;
 }
 
-.Graph {
+.BarChart {
   display:flex;
+  justify-content: space-around;
+  align-items: flex-end;
   height: 1000px;
   width: 80%;
   color: white;
   background: #272121;
   margin: 0px 200px 200px 200px;
+}
+
+.BarChart-bar {
+  color: black;
+  font-size: 20pt;
+  background: #96a8b4;
+  width: 50px;
 }
