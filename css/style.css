@@ -9,6 +9,10 @@ body {
 }
 
 .Graph {
+  display:flex;
+  height: 1000px;
+  width: 80%;
+  color: white;
   background: #272121;
   margin: 0px 200px 200px 200px;
 }
