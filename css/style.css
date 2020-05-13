@@ -1,6 +1,6 @@
-body {
+:root {
   font-family: 'Raleway';
-  background: #443737;
+  background: #222831;
 }
 
 .title {
@@ -15,15 +15,31 @@ body {
   height: 1000px;
   width: 80%;
   color: white;
-  background: #272121;
+  background: #30475E;
   margin: 0px 200px 200px 200px;
   padding: 0px 30px 0px 30px;
+  /* border: 2px solid #ECECEC */
 }
 
 .BarChart-bar {
   color: black;
+  text-align: center;
   font-size: 20pt;
   font-weight: bold;
-  background: #96a8b4;
+  background: #F2A365;
   width: 100px;
+  transform: scale(1, 1);
+  transition: 0.2s;
 }
+
+.BarChart-bar:hover {
+  background: #d6c7bb;
+  box-shadow: 5px 5px 5px black;
+  transform: scale(1.05, 1);
+
+}
+/* NOTES:
+->when page loads, have bars "built" from bottom-up (w transform)
+->add hover pseudo class transformation for color/shadow/glow
+->make parent of BarChart a grid to get some auto columns going
+*/
