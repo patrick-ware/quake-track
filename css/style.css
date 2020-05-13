@@ -11,6 +11,7 @@
 .BarChart {
   display:flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: flex-end;
   height: 1000px;
   width: 80%;
@@ -27,14 +28,15 @@
   font-size: 20pt;
   font-weight: bold;
   background: #F2A365;
-  width: 100px;
+  flex-grow: 1;
+  margin: 0px 10px 0px 10px;
   transform: scale(1, 1);
   transition: 0.2s;
 }
 
 .BarChart-bar:hover {
   background: #d6c7bb;
-  box-shadow: 5px 5px 5px black;
+  /* box-shadow: 5px 5px 5px black; */
   transform: scale(1.05, 1);
 
 }
