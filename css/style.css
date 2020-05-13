@@ -42,15 +42,30 @@ html, body{
   padding: 0px 30px 0px 30px;
 }
 
-.BarChart-bar {
-  color: black;
-  text-align: center;
-  font-size: 36pt;
-  font-weight: bold;
-  background: #F2A365;
-  flex-grow: 1;
-  margin: 0px 20px 0px 20px;
-  transition: 0.2s;
+@media only screen and (min-width: 300px) {
+  .BarChart-bar {
+    color: black;
+    text-align: center;
+    font-size: 36pt;
+    font-weight: bold;
+    background: #F2A365;
+    flex-grow: 1;
+    margin: 0px 5px 0px 5px;
+    transition: 0.2s;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .BarChart-bar {
+    color: black;
+    text-align: center;
+    font-size: 36pt;
+    font-weight: bold;
+    background: #F2A365;
+    flex-grow: 1;
+    margin: 0px 20px 0px 20px;
+    transition: 0.2s;
+  }
 }
 
 .BarChart-bar:hover {
