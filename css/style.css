@@ -1,17 +1,24 @@
+/* Global CSS variables declared */
 :root {
-  font-family: 'Raleway';
-  background: #222831;
+  --bg-color-page: #222831;
+  --bg-color-barchart: #30475E;
+  --color-bars: #F2A365;
 }
 
+/* Selection pseudo-element styling for when a page element is highlighted */
 ::selection {
   color: black;
   background: white;
 }
 
+/* Styling properties applied to entire page */
 html, body{
   height: 100%;
+  background: var(--bg-color-page);
+  font-family: 'Raleway';
 }
 
+/* Page element styling for smartphones and tablets */
 @media only screen and (min-width: 300px) {
   .title {
     color: white;
@@ -27,6 +34,7 @@ html, body{
   }
 }
 
+/* Page element styling for larger tablets and computers */
 @media only screen and (min-width: 769px) {
   .title {
     color: white;
@@ -44,6 +52,7 @@ html, body{
   }
 }
 
+/* Styling for bar chart component of page */
 .BarChart {
   display:flex;
   justify-content: space-around;
@@ -52,43 +61,41 @@ html, body{
   height: 85%;
   width: 95%%;
   color: white;
-  background: #30475E;
+  background: var(--bg-color-barchart);
   margin: 0px 0px 0px 0px;
   padding: 0px 30px 0px 30px;
 }
 
+/* Chart component styling for smartphones and tablets */
 @media only screen and (min-width: 300px) {
   .BarChart-bar {
     color: black;
     text-align: center;
     font-size: 36pt;
     font-weight: bold;
-    background: #F2A365;
+    background: var(--color-bars);
     flex-grow: 1;
     margin: 0px 5px 0px 5px;
     transition: 0.2s;
   }
 }
 
+/* Chart component styling for larger tablets and computers */
 @media only screen and (min-width: 769px) {
   .BarChart-bar {
     color: black;
     text-align: center;
     font-size: 36pt;
     font-weight: bold;
-    background: #F2A365;
+    background: var(--color-bars);
     flex-grow: 1;
     margin: 0px 20px 0px 20px;
     transition: 0.2s;
   }
 }
 
+/* CSS transition styling */
 .BarChart-bar:hover {
   background: #d6c7bb;
   transform: scale(1.05, 1);
-
 }
-/* NOTES:
-->when page loads, have bars "built" from bottom-up (w transform)
-->make parent of BarChart a grid to get some auto columns going
-*/
